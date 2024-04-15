@@ -9,12 +9,30 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.loginbody{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .regForm{
     width: 100%;
     max-width: 400px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.loginForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .regForm h1{
@@ -204,18 +222,22 @@ button:hover{
         left: 50%;
         transform: translate(-50%,0%);
     }
+    .loginForm{
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     body{
         height: 135vh;
     }
 }
 
 #loader{
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
 }
 .loader {
     border: 10px solid transparent;
@@ -223,7 +245,6 @@ button:hover{
     border-top: 10px solid #3498db;
     width: 120px;
     height: 120px;
-    position: absolute;
     background: transparent;
     animation: spin 0.5s linear infinite;
   }
@@ -233,6 +254,20 @@ button:hover{
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+  }
+
+  .reglink{
+    display: flex;
+    justify-content: center;
+  }
+
+  .reglink > a{
+    font-size: 24px;
+    color: white; 
+    text-shadow: 0 0 5px #633ad4,
+                 0 0 10px #9a78d8;
+                 /* 0 0 15px #00ff00; */
+
   }
 
 

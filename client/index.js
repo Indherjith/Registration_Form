@@ -12,7 +12,7 @@ document.querySelector('form').addEventListener('submit',async (e) => {
     e.preventDefault()
     document.getElementsByTagName("body")[0].style.opacity = 0.4;
     const data = Object.fromEntries(new FormData(e.target).entries())
-    document.getElementById("loader").style.display = "block";
+    document.getElementById("loader").style.display ="block";
     try{
         const response = await fetch("http://localhost:8080/register", 
         {method: "POST",mode: "cors",

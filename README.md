@@ -1,7 +1,7 @@
 
 # Registration_Form
 
-Registration_Form is a Full_Stack project made up of MERN stack. In this project, People can register with their details and save it in the database.
+Registration_Form is a Full_Stack project made up of MERN stack. In this project, People can register with their details and save it in the database. People can also Login by their credentials of email and password. And also it send a token after successful login.
 
 
 ## Table of Contents
@@ -44,6 +44,7 @@ http://127.0.0.1:5500/client/index.html
 
 - Responsiveness
 - Registration
+- Login
 - bcrypt password
 
 
@@ -69,9 +70,13 @@ To run this project, you will need to add the following environment variables to
 ```
 PORT = 8080
 MONGO_URL = here your Database COnnection URL
+JWT_SECRET = here your secret key anything
 ```
 
 server.js
 - Registration_Form Post API Request
 `http://localhost:8080/register`
+
+- Login_Form Post API Request
+`http://localhost:8080/login`
 
