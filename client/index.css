@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 150vh;
+    background-image: url(./bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.regForm{
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.regForm h1{
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3vhw;
+    margin-top: 10%;
+    animation: title 3s;
+} 
+
+@keyframes title{
+    0%{
+        scale: 0;
+    }
+    80%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.regForm > form{
+    width: 80%;
+    margin: auto;
+}  
+
+.fullname{
+    width: 100%;
+    margin-left: 0px;
+    animation: fname 2s ease-in-out;
+}
+
+@keyframes fname{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.username{
+    width: 100%;
+    margin-left: 0px;
+    animation: uname 1.8s ease-in-out;
+}
+
+@keyframes uname{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.password{
+    width: 100%;
+    margin-left: 0px;
+    animation: pass 1.6s ease-in-out;
+}
+
+@keyframes pass{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.contact{
+    width: 100%;
+    margin-left: 0px;
+    animation: cont 1.4s ease-in-out;
+}
+
+@keyframes cont{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.mail{
+    width: 100%;
+    margin-left: 0px;
+    animation: gmail 1.2s ease-in-out;
+}
+
+@keyframes gmail{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.gender{
+    width: 100%;
+    margin-left: 0px;
+    animation: gend 1s ease-in-out;
+}
+
+@keyframes gend{
+    from{
+        margin-left: -200%;
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+
+.btn{
+    width: 100%;
+    margin-left: 0px;
+    animation: btns 3s ease-in-out;
+}
+
+@keyframes btns{
+    0%{
+        opacity: 0.5;
+        scale: 0;
+    }
+    70%{
+        opacity: 0.7;
+        scale: 0;
+    }
+    100%{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.fullname > p, .username > p, .password > p, .contact > p, .mail > p, .gender > p{
+    color: white;
+    font-size: 1.5rem;
+    margin: 6px 0;
+}
+
+.fullname > input, .username > input, .password > input, .contact > input, .mail > input, .gender > input{
+    padding: 10px 5%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid teal;
+    width: 90%;
+    cursor: pointer;
+}
+
+#rad{
+    color: white;
+    font-size: 1.2rem;
+    align-items: left;
+    margin-left: 5%;
+}
+#full_msg, #user_msg, #pass_msg, #cpass_msg, #contact_msg, #mail_msg, #gender_msg{
+    font-size: 0.8rem;
+    margin: 0 0 0 5%;
+    height: 1.2rem;
+}
+
+button{
+    width: 50%;
+    margin: 15px 25%;
+    padding: 8px 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: green;
+    background-color: lightblue;
+}
+button:hover{
+    background-color: green;
+    color: white;
+}
+
+
+@media all and (max-width:796px){
+    .regForm{
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+    body{
+        height: 135vh;
+    }
+}
+
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: transparent;
+    animation: spin 0.5s linear infinite;
+  }
+  
+ 
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+

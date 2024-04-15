@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="regForm">
+        <h1>Registration Form</h1>
+        <form id="reg_form" >
+                <div class="fullname">
+                    <p class="one">FullName</p>
+                    <input class="one" type="text" id="fname" onchange="check_Fullname(event.target.value)" name="fullname" placeholder="Enter Full Name">
+                    <h6 id="full_msg"  ></h6>
+                </div>
+                <div class="username">
+                    <p>UserName</p>
+                    <input type="text" name="username" id="uname" onchange="check_Username(event.target.value)" placeholder="Enter User Name">
+                    <h6 id="user_msg"  ></h6>
+                </div>
+                <div class="password">
+                    <p>Password</p>
+                    <input type="password" name="password" id="pass" onchange="check_password(event.target.value)" placeholder="Enter Password">
+                    <h6 id="pass_msg"  ></h6>
+                </div>
+                <div class="password">
+                    <p>Confirm Password</p>
+                    <input type="password"  name="confirm_password" id="conpass" onchange="check_confirmpassword(event.target.value)" placeholder="Re-Enter Password">
+                    <h6 id="cpass_msg"  ></h6>
+                </div>
+                <div class="contact">
+                    <p>Contact</p>
+                    <input type="text"  name="contact" id="contact" onchange="check_contact(event.target.value)" placeholder="Enter Contact Number">
+                    <h6 id="contact_msg"  ></h6>
+                </div>
+                <div class="mail">
+                    <p>MailID</p>
+                    <input type="email"  name="email" id="mail" onchange="check_mail(event.target.value)" placeholder="Enter Mail ID">
+                    <h6 id="mail_msg"  ></h6>
+                </div>
+                <div class="gender">
+                    <p>Select_Gender</p>
+                    <p id="rad"><input type="radio" onchange="check_gender(event.target.value)"  name="gender" value="male"> Male</p>
+                    <p id="rad"><input type="radio" onchange="check_gender(event.target.value)"  name="gender" value="female"> Female</p>    
+                    <h6 id="gender_msg"  ></h6>               
+                </div>
+                <div class="btn">
+                    <button type="submit" id="sub_btn">submit</button>
+                </div>
+        </form>
+    </div>
+    <div id="loader">
+        <div class="loader"></div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
